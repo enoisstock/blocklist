@@ -1,0 +1,205 @@
+﻿[Adblock Plus 1.1]
+! AdGuard Home DACH / Österreich Direktfilter
+! Version: 20260724-03
+! Title: DACH regionaler Filter für AdGuard Home (direkte Adblock Plus-Syntax)
+! Last modified: 24 Jul 2026 13:05 UTC
+! Homepage: https://github.com/yourusername
+! Licence: Public Domain
+! Diese Datei enthält direkte Adblock Plus / EasyList-kompatible Regeln.
+! Keine Blocklisten-URLs, sondern bereits die Filterregeln selbst.
+!
+! Nutzen:
+! - In AdGuard Home eigene Filterlisten einfügen, sofern Adblock Plus-Syntax unterstützt wird.
+! - Alternativ als Vorlage für lokale AdGuard / Browser-Filter nutzen.
+! - Diese Datei ist für den DACH-/Österreich-Raum optimiert.
+!
+! === Abschnitt 1: DACH / Österreich regionale Werbung ===
+! Typische Werbemuster und Begriffe aus deutschsprachigen Medien.
+-Bannerwerbung-
+-werb_hori.
+-werb_vert.
+-Werbebanner-
+-Werbebanner.
+-Werbung$
+-Werbung/
+-werbung/
+-werb/
+-werbe/
+/ad/anzeige_
+/ads/
+/ads?
+/banner/
+/banner_
+/banneradvertisement
+/werbung*
+/werbung/*
+/werbung_
+/werbung.
+/werbung?
+/werbe.
+/werbe_
+/werbe*
+/werbe-banner*
+/werbe_ad*
+/werbeanzeige*
+/werbeplakat*
+/werbeblock*
+/werbeartikel*
+/werbelinks*
+/werbeinseln*
+/werbepartner*
+! Lokale deutsche und österreichische Schlüsselbegriffe in URL-Paths.
+/merkur-werbebanner.
+/krone.at/ads
+/oe24.at/advert
+/derstandard.at/ads
+/kurier.at/ads
+/orf.at/ads
+/plus.at/ads
+/news.at/ads
+/hitradio.at/ads
+! Regionale Anzeigen- und Adserver-Domains.
+||adscale.de^
+||adition.net^
+||adform.net^
+||ad-hosting.de^
+||adservice.google.com^
+||adsafeprotected.com^
+||adsystem.com^
+||adtech.de^
+||advertising.com^
+||advertise.com^
+||advertising.de^
+||advertising.swr.de^
+||advertising.tvww.de^
+||audi.de/ads^
+||bannerflow.com^
+||bedigital.de^
+||blogads.com^
+||doubleclick.net^
+||g.doubleclick.net^
+||googlesyndication.com^
+||googleadservices.com^
+||google-analytics.com^
+||partner.googleadservices.com^
+||outbrain.com^
+||taboola.com^
+||zedo.com^
+||yieldkit.com^
+||smaato.net^
+||rubiconproject.com^
+||openx.net^
+||appnexus.com^
+||pubmatic.com^
+||criteo.net^
+||sharethrough.com^
+||dyntrk.com^
+||ml314.com^
+||webtrekk.net^
+||adnxs.com^
+||adform.com^
+||adxserving.com^
+||crwdcntrl.net^
+||iadb.net^
+||ias-systems.com^
+||imrworldwide.com^
+||invitemedia.com^
+||krxd.net^
+||base44.com^
+||base44.net^
+! === Abschnitt 1.1: YouTube / Video-Werbung ===
+! Blockiere YouTube/Google-Werbehosts und typische Videowerbung-Muster.
+||pagead2.googlesyndication.com^
+||googleads.g.doubleclick.net^
+||ad.doubleclick.net^
+||youtube.com/pagead/*
+||youtube.com/get_video_info?*adformat=*
+||youtube.com/get_midroll_info?*
+||youtube.com/api/stats/ads?*
+||youtube.com/api/stats/watchtime?*
+||youtube.com/ptracking?*
+||s.youtube.com/ptracking?*
+||youtube.com/verify_age?*
+||youtube.com/get_iplayer_info?*
+! === Abschnitt 2: Datenschutz / Tracking ===
+! Tracker und Analysedienste, die nicht zur Seitennavigation gehören.
+||analytics.google.com^
+||analytics.twitter.com^
+||connect.facebook.net^
+||facebook.net^
+||pixel.facebook.com^
+||static.hotjar.com^
+||www.google-analytics.com^
+||ssl.google-analytics.com^
+||stats.g.doubleclick.net^
+||track.adform.net^
+||tr.snapchat.com^
+||ads.yahoo.com^
+||bat.bing.com^
+||cdn.segment.com^
+||segmetrics.io^
+||adssettings.google.com^
+||trackcmp.net^
+||trk.mail.ru^
+||umeng.com^
+||quantserve.com^
+||scorecardresearch.com^
+||demdex.net^
+||everesttech.net^
+||krxd.net^
+||cloudfront.net/*/pixel
+||mathtag.com^
+||moatads.com^
+||optanon.swg.*^
+||tagmanager.google.com^
+||tags.tiqcdn.com^
+||sync.mathtag.com^
+||consent.cookiebot.com^
+||cookie-script.com^
+||cookieconsent.insites.com^
+||cdn.cookiebot.com^
+! Tracking-Parameter, die beim Entfernen oft sauberer laden.
+*?utm_source=*
+*?utm_medium=*
+*?utm_campaign=*
+*?utm_term=*
+*?utm_content=*
+*?fbclid=*
+*?gclid=*
+*?yclid=*
+! === Abschnitt 3: Phishing, Betrug & Malware ===
+! Konkrete gefährliche Domains und betrügerische Werbenetzwerke.
+||bd742.com^
+||clicks.imaxcash.com^
+||marketing.net.brillen.de^
+||media.datingpartner.com^
+||ofrbpu.smartbroker.de^
+||t.trafai.com^
+||trk.imobtrk.com^
+||adklick.de^
+||ad.de.doubleclick.net^$popup,third-party
+||adperform.de^$popup,third-party
+||arminius.io^$popup,third-party
+||delmovip.com^$popup
+||gamigoads.com^$popup,third-party
+||trafficfabrik.com^$popup,third-party
+||websc.org^$popup,third-party
+||wixnm.com^$popup
+||xtreff69.com^$popup,third-party
+! Zusätzliche Direktregeln aus regionalen Filterlisten.
+-Bannerwerbung-
+-werb_hori.
+-werb_vert.
+-werbebanner.
+-werbebanner-
+! === Abschnitt 4: Lokale Ergänzungen / Allowlist ===
+! Ergänze hier eigene Regeln, die nur dein Netzwerk betreffen.
+@@||localhost^$document
+@@||127.0.0.1^$document
+@@||192.168.178.96^$document
+! Ausnahme für wichtige lokale Dienste.
+@@||fritz.box^$document
+@@||nas.local^$document
+! Beispiel: eigene Domains blockieren oder ausnehmen.
+! ||example.com^
+! @@||example.com^
