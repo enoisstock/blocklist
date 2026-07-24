@@ -108,6 +108,11 @@
 ||krxd.net^
 ||base44.com^
 ||base44.net^
+||mangoprojects.info^
+||adblockeraio.pro^
+##                    ##
+##||beispiel.beispiel^##
+##                    ##
 ! === Abschnitt 1.1: YouTube / Video-Werbung ===
 ! Blockiere YouTube/Google-Werbehosts und typische Videowerbung-Muster.
 ||pagead2.googlesyndication.com^
