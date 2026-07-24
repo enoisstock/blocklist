@@ -1,12 +1,13 @@
-﻿[Adblock Plus 1.1]
+[Adblock Plus 1.1]
 ! AdGuard Home DACH / Österreich Direktfilter
-! Version: 20260724-03
+! Version: 20260724-04
 ! Title: DACH regionaler Filter für AdGuard Home (direkte Adblock Plus-Syntax)
-! Last modified: 24 Jul 2026 13:05 UTC
-! Homepage: https://github.com/yourusername
+! Last modified: 24 Jul 2026 13:20 UTC
+! Homepage: https://github.com/enoisstock/blocklist
 ! Licence: Public Domain
 ! Diese Datei enthält direkte Adblock Plus / EasyList-kompatible Regeln.
 ! Keine Blocklisten-URLs, sondern bereits die Filterregeln selbst.
+! Raw-GitHub-URL: https://raw.githubusercontent.com/enoisstock/blocklist/main/list.txt
 !
 ! Nutzen:
 ! - In AdGuard Home eigene Filterlisten einfügen, sofern Adblock Plus-Syntax unterstützt wird.
@@ -110,6 +111,7 @@
 ! === Abschnitt 1.1: YouTube / Video-Werbung ===
 ! Blockiere YouTube/Google-Werbehosts und typische Videowerbung-Muster.
 ||pagead2.googlesyndication.com^
+||pagead.l.doubleclick.net^
 ||googleads.g.doubleclick.net^
 ||ad.doubleclick.net^
 ||youtube.com/pagead/*
@@ -121,6 +123,7 @@
 ||s.youtube.com/ptracking?*
 ||youtube.com/verify_age?*
 ||youtube.com/get_iplayer_info?*
+||youtube.com/get_midroll_info?*
 ! === Abschnitt 2: Datenschutz / Tracking ===
 ! Tracker und Analysedienste, die nicht zur Seitennavigation gehören.
 ||analytics.google.com^
