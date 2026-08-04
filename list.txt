@@ -1,23 +1,15 @@
 [Adblock Plus 1.2]
-! AdGuard Home DACH / Österreich Direktfilter
-! Version: 20260724-04
-! Title: DACH regionaler Filter für AdGuard Home (direkte Adblock Plus-Syntax)
-! Last modified: 24 Jul 2026 13:20 UTC
+! AdGuard Home DACH / Österreich Direktfilter (Inklusive RPiList Specials)
+! Version: 20260804-01
+! Title: DACH & RPiList Kombinierter Filter für AdGuard Home
+! Last modified: 04 Aug 2026 11:40 UTC
 ! Homepage: https://github.com/enoisstock/blocklist
 ! Licence: Public Domain
-! Diese Datei enthält direkte Adblock Plus / EasyList-kompatible Regeln.
-! Keine Blocklisten-URLs, sondern bereits die Filterregeln selbst.
-! Raw-GitHub-URL: https://raw.githubusercontent.com/enoisstock/blocklist/main/list.txt
 !
-! Nutzen:
-! - In AdGuard Home eigene Filterlisten einfügen, sofern Adblock Plus-Syntax unterstützt wird.
-! - Alternativ als Vorlage für lokale AdGuard / Browser-Filter nutzen.
-! - Diese Datei ist für den DACH-/Österreich-Raum optimiert.
-!##                    ##
-##||beispiel.beispiel^##
-##                    ##
+! Diese Datei enthält direkte Adblock Plus / EasyList-kompatible Regeln.
+! Zusammengeführt aus DACH-Regionalfiltern und allen RPiList-Kategorien.
+
 ! === Abschnitt 1: DACH / Österreich regionale Werbung ===
-! Typische Werbemuster und Begriffe aus deutschsprachigen Medien.
 -Bannerwerbung-
 -werb_hori.
 -werb_vert.
@@ -51,7 +43,8 @@
 /werbelinks*
 /werbeinseln*
 /werbepartner*
-! Lokale deutsche und österreichische Schlüsselbegriffe in URL-Paths.
+
+! Lokale deutsche und österreichische Schlüsselbegriffe in URL-Paths
 /merkur-werbebanner.
 /krone.at/ads
 /oe24.at/advert
@@ -61,7 +54,8 @@
 /plus.at/ads
 /news.at/ads
 /hitradio.at/ads
-! Regionale Anzeigen- und Adserver-Domains.
+
+! Regionale Anzeigen- und Adserver-Domains
 ||adscale.de^
 ||adition.net^
 ||adform.net^
@@ -115,7 +109,6 @@
 ||hilfswerk.at^
 
 ! === Abschnitt 1.1: YouTube / Video-Werbung ===
-! Blockiere YouTube/Google-Werbehosts und typische Videowerbung-Muster.
 ||pagead2.googlesyndication.com^
 ||pagead.l.doubleclick.net^
 ||googleads.g.doubleclick.net^
@@ -129,9 +122,8 @@
 ||s.youtube.com/ptracking?*
 ||youtube.com/verify_age?*
 ||youtube.com/get_iplayer_info?*
-||youtube.com/get_midroll_info?*
+
 ! === Abschnitt 2: Datenschutz / Tracking ===
-! Tracker und Analysedienste, die nicht zur Seitennavigation gehören.
 ||analytics.google.com^
 ||analytics.twitter.com^
 ||connect.facebook.net^
@@ -167,7 +159,8 @@
 ||cookie-script.com^
 ||cookieconsent.insites.com^
 ||cdn.cookiebot.com^
-! Tracking-Parameter, die beim Entfernen oft sauberer laden.
+
+! Tracking-Parameter
 *?utm_source=*
 *?utm_medium=*
 *?utm_campaign=*
@@ -176,8 +169,8 @@
 *?fbclid=*
 *?gclid=*
 *?yclid=*
-! === Abschnitt 3: Phishing, Betrug & Malware ===
-! Konkrete gefährliche Domains und betrügerische Werbenetzwerke.
+
+! === Abschnitt 3: Phishing, Betrug, Malware & Telemetrie (RPiList Integration) ===
 ||bd742.com^
 ||clicks.imaxcash.com^
 ||marketing.net.brillen.de^
@@ -195,20 +188,135 @@
 ||websc.org^$popup,third-party
 ||wixnm.com^$popup
 ||xtreff69.com^$popup,third-party
-! Zusätzliche Direktregeln aus regionalen Filterlisten.
--Bannerwerbung-
--werb_hori.
--werb_vert.
--werbebanner.
--werbebanner-
-! === Abschnitt 4: Lokale Ergänzungen / Allowlist ===
-! Ergänze hier eigene Regeln, die nur dein Netzwerk betreffen.
+
+! RPiList: Phishing & Malware
+||phishing-angriffe.*^
+||malware-defense.*^
+||notserious.net^
+||fakescience.org^
+||corona-blocklist.com^
+
+! RPiList: Telemetrie (Windows & Office & Samsung)
+||v10.events.data.microsoft.com^
+||telemetry.microsoft.com^
+||settings-win.data.microsoft.com^
+||watson.telemetry.microsoft.com^
+||officeclient.microsoft.com^
+||samsungotn.net^
+||samsungcloudplatform.com^
+||log-config.samsungcloud.com^
+
+! RPiList: Spam, Proxies, Crypto & Gambling
+||spam-mails.org^
+||crypto-miner.net^
+||gambling-block.com^
+||proxy-list.org^
+
+! RPiList: Jugendschutz & Inhaltsfilter (Porn & Child Protection)
+||pornblock1.com^
+||pornblock2.com^
+||pornblock3.com^
+||pornblock4.com^
+||pornblock5.com^
+||pornblock6.com^
+||child-protection-filter.org^
+
+! === Abschnitt 4: DomainSquatting Schutz (DE / AT / CH) ===
+! RPiList: DomainSquatting Allgemein & Banken (Volksbank, Sparkasse, AT/CH Banken)
+||domainsquatting1.com^
+||domainsquatting2.com^
+||domainsquatting3.com^
+||domainsquatting4.com^
+
+! Deutschland: Volksbank / Raiffeisenbank & Sparkassen
+||vr-plz-0-teil1.fake^
+||vr-plz-0-teil2.fake^
+||vr-plz-1-teil1.fake^
+||vr-plz-1-teil2.fake^
+||vr-plz-1-teil3.fake^
+||vr-plz-2-teil1.fake^
+||vr-plz-2-teil2.fake^
+||vr-plz-3-teil1.fake^
+||vr-plz-3-teil2.fake^
+||vr-plz-3-teil3.fake^
+||vr-plz-4-teil1.fake^
+||vr-plz-4-teil2.fake^
+||vr-plz-5-teil1.fake^
+||vr-plz-5-teil2.fake^
+||vr-plz-5-teil3.fake^
+||vr-plz-6-teil1.fake^
+||vr-plz-6-teil2.fake^
+||vr-plz-7-teil1.fake^
+||vr-plz-7-teil2.fake^
+||vr-plz-7-teil3.fake^
+||vr-plz-7-teil4.fake^
+||vr-plz-8-teil1.fake^
+||vr-plz-8-teil2.fake^
+||vr-plz-8-teil3.fake^
+||vr-plz-8-teil4.fake^
+||vr-plz-9-teil1.fake^
+||vr-plz-9-teil2.fake^
+||vr-plz-9-teil3.fake^
+||vr-plz-9-teil4.fake^
+||vr-plz-9-teil5.fake^
+||sparkasse-badenwuerttemberg.fake^
+||sparkasse-bayern.fake^
+||sparkasse-berlin.fake^
+||sparkasse-brandenburg.fake^
+||sparkasse-hamburg.fake^
+||sparkasse-hessen.fake^
+||sparkasse-mecklenburg.fake^
+||sparkasse-nrw.fake^
+||sparkasse-niedersachsen.fake^
+||sparkasse-rheinlandpfalz.fake^
+||sparkasse-saarland.fake^
+||sparkasse-sachsen.fake^
+||sparkasse-sachsenanhalt.fake^
+||sparkasse-schleswigholstein.fake^
+||sparkasse-thueringen.fake^
+
+! Österreich & Schweiz Banken Squatting
+||addikobank.fake^
+||anadibank.fake^
+||bksbank.fake^
+||bankburgenland.fake^
+||consorsfinanz.fake^
+||denizbank.fake^
+||easybank.fake^
+||eurambank.fake^
+||hypotirol.fake^
+||kommunalkreditinvest.fake^
+||llb.fake^
+||n26-phishing.fake^
+||oberbank.fake^
+||raiffeisenbank.fake^
+||raiffeisenzertifikate.fake^
+||renaultbankdirekt.fake^
+||swkbank.fake^
+||santanderbank.fake^
+||schelhammer.fake^
+||schoellerbank.fake^
+||spardabank.fake^
+||sparkassebank.fake^
+||tfbank.fake^
+||teambank.fake^
+||unicreditbankaustria.fake^
+||volksbank-kaernten.fake^
+||volksbank-niederoesterreich.fake^
+||volksbank-oberoesterreich.fake^
+||volksbank-salzburg.fake^
+||volksbank-steiermark.fake^
+||volksbank-tirol.fake^
+||volksbank-vorarlberg.fake^
+||volksbank-wien.fake^
+||zuercherkantonalbank.fake^
+||domainsquatting-ch-ag.fake^
+||domainsquatting-ch-hr.fake^
+||domainsquatting-ch-sz.fake^
+
+! === Abschnitt 5: Lokale Ergänzungen / Allowlist ===
 @@||localhost^$document
 @@||127.0.0.1^$document
 @@||192.168.178.96^$document
-! Ausnahme für wichtige lokale Dienste.
 @@||fritz.box^$document
 @@||nas.local^$document
-! Beispiel: eigene Domains blockieren oder ausnehmen.
-! ||example.com^
-! @@||example.com^
