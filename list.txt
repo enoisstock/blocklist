@@ -13,7 +13,9 @@
 ! - In AdGuard Home eigene Filterlisten einfügen, sofern Adblock Plus-Syntax unterstützt wird.
 ! - Alternativ als Vorlage für lokale AdGuard / Browser-Filter nutzen.
 ! - Diese Datei ist für den DACH-/Österreich-Raum optimiert.
-!
+!##                    ##
+##||beispiel.beispiel^##
+##                    ##
 ! === Abschnitt 1: DACH / Österreich regionale Werbung ===
 ! Typische Werbemuster und Begriffe aus deutschsprachigen Medien.
 -Bannerwerbung-
@@ -110,9 +112,8 @@
 ||base44.net^
 ||mangoprojects.info^
 ||adblockeraio.pro^
-##                    ##
-##||beispiel.beispiel^##
-##                    ##
+||hilfswerk.at^
+
 ! === Abschnitt 1.1: YouTube / Video-Werbung ===
 ! Blockiere YouTube/Google-Werbehosts und typische Videowerbung-Muster.
 ||pagead2.googlesyndication.com^
