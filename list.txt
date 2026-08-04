@@ -1,4 +1,4 @@
-[Adblock Plus 1.1]
+[Adblock Plus 1.2]
 ! AdGuard Home DACH / Österreich Direktfilter
 ! Version: 20260724-04
 ! Title: DACH regionaler Filter für AdGuard Home (direkte Adblock Plus-Syntax)
