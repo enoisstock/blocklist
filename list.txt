@@ -1,0 +1,88 @@
+[Adblock Plus 1.2]
+! AdGuard Home DACH / Österreich Direktfilter (Inklusive RPiList Specials)
+! Version: 20260804-01
+! Title: DACH & RPiList Kombinierter Filter für AdGuard Home
+! Last modified: 04 Aug 2026 11:40 UTC
+! Homepage: https://github.com/enoisstock/blocklist
+! Licence: Public Domain
+!
+! Diese Datei enthält direkte Adblock Plus / EasyList-kompatible Regeln.
+! Zusammengeführt aus DACH-Regionalfiltern und allen RPiList-Kategorien.
+!! === Andere blocklisten === sind von anderen usern .
+
+Beispiele fürs blockieren:
+!/handytarife/Samsung/
+!gilt für alle webseiten mit /handytarife/Samsung/
+!nur /handytarife/Samsung/
+!wird gesperrt
+
+!Ganze webseite sperren domain zb google.com
+
+||Beispiel.com^
+
+! === 1 ===
+-Bannerwerbung-
+-werb_hori.
+-werb_vert.
+-Werbebanner-
+-Werbebanner.
+-Werbung$
+-Werbung/
+-werbung/
+-werb/
+-werbe/
+/ad/anzeige_
+/ads/
+/ads?
+/banner/
+/banner_
+/banneradvertisement
+/werbung*
+/werbung/*
+/werbung_
+/werbung.
+/werbung?
+/werbe.
+/werbe_
+/werbe*
+/werbe-banner*
+/werbe_ad*
+/werbeanzeige*
+/werbeplakat*
+/werbeblock*
+/werbeartikel*
+/werbelinks*
+/werbeinseln*
+/werbepartner*
+/merkur-werbebanner.
+/krone.at/ads
+/oe24.at/advert
+/derstandard.at/ads
+/kurier.at/ads
+/orf.at/ads
+/plus.at/ads
+/news.at/ads
+/hitradio.at/ads
+||adscale.de^
+||adition.net^
+||adform.net^
+||ad-hosting.de^
+||adservice.google.com^
+||adsafeprotected.com^
+||adsystem.com^
+||adtech.de^
+||advertising.com^
+||advertise.com^
+||advertising.de^
+||advertising.swr.de^
+||advertising.tvww.de^
+||audi.de/ads^
+||bannerflow.com^
+||bedigital.de^
+||blogads.com^
+||doubleclick.net^
+||g.doubleclick.net^
+||googlesyndication.com^
+||googleadservices.com^
+||google-analytics.com^
+||partner.googleadservices.com^
