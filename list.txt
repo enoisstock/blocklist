@@ -1,8 +1,8 @@
 [Adblock Plus 1.2]
 ! AdGuard Home DACH / Österreich Direktfilter (Inklusive RPiList Specials)
-! Version: 20260804-01
+! Version: 20260820-01
 ! Title: DACH & RPiList Kombinierter Filter für AdGuard Home
-! Last modified: 04 Aug 2026 11:40 UTC
+! Last modified: 20 Aug 2026 18:30 UTC
 ! Homepage: https://github.com/enoisstock/blocklist
 ! Licence: Public Domain
 !
@@ -86,3 +86,6 @@ Beispiele fürs blockieren:
 ||googleadservices.com^
 ||google-analytics.com^
 ||partner.googleadservices.com^
+
+! === GitHub Telemetrie & Analytics ===
+||collector.github.com^
