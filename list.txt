@@ -86,6 +86,7 @@ Beispiele fürs blockieren:
 ||googleadservices.com^
 ||google-analytics.com^
 ||partner.googleadservices.com^
+||www.ashampoo.com^
 
 ! === GitHub Telemetrie & Analytics ===
 ||collector.github.com^
