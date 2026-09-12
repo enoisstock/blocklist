@@ -1,26 +1,26 @@
 [Adblock Plus 1.2]
 ! AdGuard Home DACH / Österreich Direktfilter (Inklusive RPiList Specials)
-! Version: 20260820-01
+! Version: 20260912-02
 ! Title: DACH & RPiList Kombinierter Filter für AdGuard Home
-! Last modified: 20 Aug 2026 18:30 UTC
+! Last modified: 12 Sep 2026 12:53 UTC
 ! Homepage: https://github.com/enoisstock/blocklist
 ! Licence: Public Domain
 !
 ! Diese Datei enthält direkte Adblock Plus / EasyList-kompatible Regeln.
 ! Zusammengeführt aus DACH-Regionalfiltern und allen RPiList-Kategorien.
-!! === Andere blocklisten === sind von anderen usern .
 
-Beispiele fürs blockieren:
-!/handytarife/Samsung/
-!gilt für alle webseiten mit /handytarife/Samsung/
-!nur /handytarife/Samsung/
-!wird gesperrt
+! === Element Hiding (Golem.de) ===
+golem.de##.go-ad-slot__wrapper
+golem.de##[id^="sdgSlotContainer-"]
+golem.de##[id^="sdgGptContainer-"]
 
-!Ganze webseite sperren domain zb google.com
+! === Spezifische Pfadsperren / Kampagnen ===
+/handytarife/Samsung/
+/lp/special-offer-premium
+/fleet/praetor-600
+/teamcity/*
 
-||Beispiel.com^
-
-! === 1 ===
+! === 1 Bannerwerbung & Standard-Muster ===
 -Bannerwerbung-
 -werb_hori.
 -werb_vert.
@@ -63,6 +63,8 @@ Beispiele fürs blockieren:
 /plus.at/ads
 /news.at/ads
 /hitradio.at/ads
+
+! === Domain-Sperren (Werbung, Tracker, Abzocke) ===
 ||adscale.de^
 ||adition.net^
 ||adform.net^
@@ -87,10 +89,6 @@ Beispiele fürs blockieren:
 ||google-analytics.com^
 ||partner.googleadservices.com^
 ||www.ashampoo.com^
-! Title: HaGeZi's Fake - AdGuard Home Format
-! Description: Blocks scams, traps, and fake sites.
-! --------------------------------------------------
-
 ||prosperi.academy^
 ||pillarsoflight.ae^
 ||ledger.com.ag^
@@ -242,7 +240,9 @@ Beispiele fürs blockieren:
 ||rhode.co.at^
 ||rip-curl.co.at^
 ||salomons.co.at^
-
-
-! === GitHub Telemetrie & Analytics ===
+||community.golem.de^
+||kaspersky.de^
+||flexjet.com^
+||jetbrains.com^
+||testlibrary.com^
 ||collector.github.com^
