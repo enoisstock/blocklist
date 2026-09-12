@@ -1,20 +1,23 @@
 [Adblock Plus 1.2]
-! AdGuard Home DACH / Österreich Direktfilter (Inklusive RPiList Specials)
-! Version: 20260912-02
+! AdGuard Home DACH / Österreich Direktfilter (Inklusive RPiList Specials & Adblock-Test Rules)
+! Version: 20260912-03
 ! Title: DACH & RPiList Kombinierter Filter für AdGuard Home
-! Last modified: 12 Sep 2026 12:53 UTC
+! Last modified: 12 Sep 2026 12:55 UTC
 ! Homepage: https://github.com/enoisstock/blocklist
 ! Licence: Public Domain
-!
-! Diese Datei enthält direkte Adblock Plus / EasyList-kompatible Regeln.
-! Zusammengeführt aus DACH-Regionalfiltern und allen RPiList-Kategorien.
 
-! === Element Hiding (Golem.de) ===
+! === Element Hiding / Kosmetikfilter (Golem & Generic Ad-Test) ===
 golem.de##.go-ad-slot__wrapper
 golem.de##[id^="sdgSlotContainer-"]
 golem.de##[id^="sdgGptContainer-"]
+##.ad-banner
+##.ad-container
+##.ad-slot
+##[id^="ad-test-"]
 
-! === Spezifische Pfadsperren / Kampagnen ===
+! === Script & Bait Blocking (Für Test-Seiten) ===
+/ads.js$script
+/pagead.js$script
 /handytarife/Samsung/
 /lp/special-offer-premium
 /fleet/praetor-600
@@ -63,6 +66,16 @@ golem.de##[id^="sdgGptContainer-"]
 /plus.at/ads
 /news.at/ads
 /hitradio.at/ads
+
+! === Telemetrie & Analytics (Test-Hosts) ===
+||bugsnag.com^
+||sentry.io^
+||mouseflow.com^
+||luckyorange.com^
+||hotjar.com^
+||freshworks.com^
+||media.net^
+||adcolony.com^
 
 ! === Domain-Sperren (Werbung, Tracker, Abzocke) ===
 ||adscale.de^
