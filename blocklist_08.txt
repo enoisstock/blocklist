@@ -11800,3 +11800,7 @@ golem.de##[id^="sdgGptContainer-"]
 ||jetbrains.com^
 ||testlibrary.com^
 ||collector.github.com^
+@@||login.live.com^
+@@||logincdn.msauth.net^
+@@||aadcdn.msauth.net^
+@@||login.microsoftonline.com^
